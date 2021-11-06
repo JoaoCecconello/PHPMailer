@@ -9,22 +9,133 @@
 </head>
 
 <body>
-    <div>
-        <!-- host -->
-        <!-- port -->
-        <!-- tls -->
-        <!-- uernamet -->
-        <!-- password -->
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col"></div>
+            <form class="col-md-5 needs-validation" novalidate>
+                <!-- host -->
+                <div class="mb-3">
+                    <label for="host" class="form-label">Host</label>
+                    <input type="text" class="form-control" id="host" placeholder="smtp.domain.com" required>
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                    <div class="invalid-feedback">
+                        Informe um host! 
+                    </div>
+                </div>
+                <!-- port -->
+                <div class="col-md-4">
+                    <label for="validationCustom01" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="validationCustom01" value="Mark" required>
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                    <div class="invalid-feedback">
+                        Informe uma porta! 
+                    </div>
+                </div>
+                <!-- tls -->
+                <div class="col-md-4">
+                    <label for="validationCustom02" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="validationCustom02" value="Otto">
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                </div>
+                <!-- uername -->
+                <div class="mb-3">
+                    <label for="username" class="form-label">Usuário</label>
+                    <input type="email" class="form-control" id="username" placeholder="name@example.com" required>
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                    <div class="invalid-feedback">
+                        Informe um usuário! 
+                    </div>
+                </div>
+                <!-- password -->
+                <div class="mb-3">
+                    <label for="password" class="form-label">Senha</label>
+                    <input type="password" class="form-control" id="password" required>
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                    <div class="invalid-feedback">
+                        Informe uma senha! 
+                    </div>
+                </div>
+                <!-- from -->
+                <div class="mb-3">
+                    <label for="from" class="form-label">De</label>
+                    <input type="email" class="form-control" id="from" placeholder="name@example.com" required>
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                    <div class="invalid-feedback">
+                        Informe um e-mail! 
+                    </div>
+                </div>
+                <!-- to -->
+                <div class="mb-3">
+                    <label for="to" class="form-label">Para</label>
+                    <input type="email" class="form-control" id="to" placeholder="name@example.com">
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                </div>
+                <!-- cc -->
+                <div class="mb-3">
+                    <label for="cc" class="form-label">Em cópia</label>
+                    <input type="email" class="form-control" id="cc" placeholder="name@example.com">
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                </div>
+                <!-- reply -->
+                <div class="mb-3">
+                    <label for="reply" class="form-label">Responda para</label>
+                    <input type="email" class="form-control" id="reply" placeholder="name@example.com">
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                </div>
+                <!-- subject -->
+                <div class="mb-3">
+                    <label for="subject" class="form-label">Título</label>
+                    <input type="email" class="form-control" id="subject" placeholder="Título" required>
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                    <div class="invalid-feedback">
+                        Informe um assunto! 
+                    </div>
+                </div>
+                <!-- altbody -->
+                <div class="mb-3">
+                    <label for="textarea" class="form-label">Corpo do e-mail</label>
+                    <textarea class="form-control" id="textarea" rows="3"></textarea>
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
+                </div>
+                
+                <!-- attachment -->
+                <div class="mb-3">
+                    <input type="file" class="form-control" aria-label="file example">
+                    <div class="invalid-feedback">Anexo</div>
+                    <div class="valid-feedback">
+                        Isso aí! 
+                    </div>
 
-        <!-- from -->
-        <!-- to -->
-        <!-- cc -->
-        <!-- reply -->
-
-        <!-- subject -->
-        <!-- altbody -->
-        <!-- attachment -->
-
+                </div>
+            
+                <div class="mb-3">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+            <div class="col"></div>
+        </div>
     </div>
     <script>
         function criaObjetoAjax() {
